@@ -1,0 +1,40 @@
+.about-slider {
+    animation: transitionIn 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.contact-description {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.contact-description h1 {
+    position: absolute;
+    display: flex;
+    font-size: 5vw;
+    color: white;
+    margin-left: 5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 40vw;
+}
+
+.contact-description p {
+    position: absolute;
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    margin-left: 5vw;
+    top: 50vw;
+}

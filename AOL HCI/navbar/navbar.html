@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../WDBP - assets/icon.ico" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .dropdown-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    <title>handtekening</title>
+</head>
+<body>
+   <div class="nav-bar">
+        <ul>
+            <a href="homePage.html" class="headLogo">handtekening</a>
+            <li><a href="market.html">Markets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <div class="icon-cart">
+                <span class="material-symbols-outlined" onclick="goToCart()">shopping_cart</span>
+            </div>
+            <div class="icon-menu">
+                <span class="material-symbols-outlined" onclick="toggleDropdown()">menu</span>
+            </div>
+        </ul>
+   </div>
+   <div class="dropdown-menu" id="dropdownMenu">
+    <ul>
+        <li>
+            <span class="material-symbols-outlined">person</span>
+            <a class="profile-name">Devano Hofker</a>
+        </li>
+        <div class="line">
+
+        </div>
+        <li class="static"><a href="market.html">Markets</a></li>
+        <li class="static"><a href="contact.html">Contact Us</a></li>
+        <li class="static"><a href="about.html">About Us</a></li>
+        <li class="static"><a href="cartPage.html">Cart</a></li>
+        <br />
+        <li>
+            <span class="material-symbols-outlined">logout</span>
+            <a href="loginPage.html">Log Out</a>
+        </li>
+    </ul>
+   </div>
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("active");
+        }
+        function goToCart() {
+            window.location.href = "cartPage.html";
+        }
+    </script>
+</body>
+<footer>
+    
+</footer>
+</html>

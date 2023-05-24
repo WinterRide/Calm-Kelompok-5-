@@ -1,0 +1,167 @@
+
+/* slider CSS */
+.market-slider {
+    position: absolute;
+    display: flex;
+    bottom: 20vw;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: transitionIn 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.market-slider footer {
+    height: 40vw;
+}
+
+.market-grid {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    width: 100%;
+    height: 100vw;
+    top: 35vw;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    display: flex;
+    top: 15vw;
+    left: 3vw;
+    font-size: 4vw;
+}
+
+.market-grid img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px grey;
+    width: 80%;
+    height: 55%;
+}
+
+.market-grid img:hover {
+    filter: brightness(30%);
+    transition: filter 0.3s ease;
+}
+
+/* content CSS */
+
+.label1, .label2, .label3, .label4, .label5 {
+    position: absolute;
+    display: flex;
+    top: 15vw;
+    left: 6vw;
+    width: 19vw;
+    font-size: 1.5vw;
+    z-index: -1;
+    color: white;
+}
+/* label 1 */
+
+.content1:hover + .label1{
+    z-index: 1;
+}
+
+.label1:hover{
+    color: black;
+    z-index: 1;
+}
+
+/* label 2 */
+
+.label2 {
+    left: 40vw;
+}
+
+.content2:hover + .label2{
+    z-index: 1;
+}
+
+.label2:hover {
+    color: black;
+    z-index: 1;
+}
+
+/* label 3 */
+.label3 {
+    left: 73vw;
+}
+
+.content3:hover + .label3{
+    z-index: 1;
+}
+
+.label3:hover {
+    z-index: 1;
+    color: black;
+}
+
+/* label 4 */
+
+.label4 {
+    top: 65vw;
+}
+
+.content4:hover + .label4{
+    z-index: 1;
+}
+
+.label4:hover {
+    color: black;
+    z-index: 1;
+}
+/* label 5 */
+
+.soldout-label {
+    position: absolute;
+    display: flex;
+    top: 73vw;
+    left: 42.5vw;
+    font-size: 3vw;
+    color: white;
+    visibility: visible;
+    z-index: 0;
+}
+
+.content5 {
+    filter: brightness(30%);
+}
+
+.content5:hover {
+    z-index: 1;
+}
+
+.label5 {
+    top: 65vw;
+    left: 40vw;
+}
+
+.content5:hover + .label5{
+    z-index: 1;
+}
+
+.label5:hover {
+    z-index: 0;
+}
+
+.label5:hover + .soldout-label {
+    opacity: 0;
+    color:black;
+}

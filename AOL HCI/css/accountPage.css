@@ -1,0 +1,92 @@
+.about-slider {
+    justify-content: center;
+}
+
+.photo-frame {
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    background-color: grey;
+    top: 50vw;
+    left: 15vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.account-title {
+    position: absolute;
+    display: flex;
+    top: 35vw;
+    left: 3vw;
+    font-size: 4vw;
+}
+
+.card-background {
+    position: absolute;
+    display: flex;
+    width: 80vw;
+    height: 50vw;
+    background-color: #E8E8E8;
+    top: 45vw;
+    left: 10vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.information {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 30vw;
+    top: 55vw;
+    left: 50vw;
+    justify-content: left;
+    align-items: left;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.detail {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 30vw;
+    top: 55vw;
+    left: 65vw;
+    justify-content: left;
+    align-items: left;
+    font-size: 2vw;
+}
+
+.photo-frame span {
+    font-size: 10vw;
+}
+
+.logout-button {
+    position: absolute;
+    display: flex;
+    top: 100vw;
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 5vw;
+    font-size: 2vw;
+    background-color: #9A031E;
+    color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border: 1vw;
+}
+
+.logout-button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    animation: transitionIn 0.75s; 
+    background-color: #3C3C3C;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* head CSS */
+
+.headLogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 14vw;
+    font-size: 3vw;
+}
+
+/* box CSS */
+
+.email-login-box {
+    position: absolute;
+    display: flex;
+    top: 25vw;
+    left: 24vw;
+    width: 50%;
+    padding: 1vw;
+}
+
+.password-login-box {
+    position: absolute;
+    display: flex;
+    top: 35vw;
+    left: 24vw;
+    width: 50%;
+    padding: 1vw;
+}
+
+/* button CSS */
+
+button {
+    position: absolute;
+    top: 45vw;
+    left: 40%;
+    padding: 1vw;
+    width: 20%;
+    height: 5vw;
+    font-size: 2vw;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* label CSS */
+
+.email-login-label {
+    position: absolute;
+    display: flex;
+    top: 22vw;
+    left: 24vw;
+    color:white;
+    font-size: 2vw;
+}
+
+.password-login-label {
+    position: absolute;
+    display: flex;
+    top: 32vw;
+    left: 24vw;
+    color:white;
+    font-size: 2vw;
+}

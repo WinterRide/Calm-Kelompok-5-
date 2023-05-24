@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/cartPage.css">
+    <link rel="icon" href="../WDBP - assets/icon.ico" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .dropdown-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    <title>handtekening</title>
+</head>
+<body>
+    <div class="cart-slider">
+        <div class="card-background"></div>
+        <img src="../assets/hollistic vase.jpg" class="bestellen-img" onclick="goToBestellen()">
+        <a class="label-cart" onclick="goToBestellen()">bestellen<br><br>
+            Wooden vase WOODY with decorative wood MANZANITA in natural brown<br><br>
+            View Detail >>
+        </a>
+        <div class="des-background"><button>Checkout</button></div>
+        <div class="order-title"><a>Order Detail : </a></div>
+        <div class="detail1">
+            <a>Product name</a>
+            <a>Product material</a>
+            <a>Product dimension</a>
+            <a>Quantity</a>
+        </div>
+        <div class="detail2">
+            <a>: bestellen</a>
+            <a>: Maple Wood</a>
+            <a>: 25 x 20 x 25</a>
+            <a>: 1</a>
+        </div>
+        <a class="total1">Total :</a>
+        <a class="total2">Rp 220.000</a>
+    </div>
+    <footer>
+        <a class="left">Visit Our Store</a>
+        <a class="right">Open Time</a>
+        <a class="left-des">Jalan Taman Palem Lestari No.2, <br />
+             RW.13, Cengkareng Barat, Kota <br />
+              Jakarta Barat</a>
+        <a class="right-des">Monday - Friday [10:00 - 18:00]</a>
+        <a class="right-des1">Saturday [10:00 - 15:00]</a>
+        <a class="down">handtekening copyright 2023</a>
+    </footer>
+    
+   <div class="nav-bar">
+        <ul>
+            <a href="homePage.html" class="headLogo">handtekening</a>
+            <li><a href="market.html">Markets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <div class="icon-cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <div class="icon-cart-active">
+                <span class="material-symbols-outlined">redeem</span>
+            </div>
+            <div class="icon-menu">
+                <span class="material-symbols-outlined" onclick="toggleDropdown()">menu</span>
+            </div>
+        </ul>
+   </div>
+   <div class="dropdown-menu" id="dropdownMenu">
+    <ul>
+        <li>
+            <span class="material-symbols-outlined">person</span>
+            <a href="accountPage.html" class="profile-name">Devano Hofker</a>
+        </li>
+        <div class="line">
+
+        </div>
+        <li class="static"><a href="homePage.html">Home</a></li>
+        <li class="static"><a href="market.html">Markets</a></li>
+        <li class="static"><a href="contact.html">Contact Us</a></li>
+        <li class="static"><a href="about.html">About Us</a></li>
+        <li class="static"><a href="cartPage.html">Cart</a></li>
+        <br />
+        <li>
+            <span class="material-symbols-outlined">logout</span>
+            <a href="loginPage.html">Log Out</a>
+        </li>
+    </ul>
+   </div>
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("active");
+        }
+        function goToBestellen(){
+            window.location.href = "bestellenPage.html";
+        }
+    </script>
+</body>
+</html>

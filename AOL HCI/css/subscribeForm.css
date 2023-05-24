@@ -1,0 +1,83 @@
+input {
+    position: absolute;
+    font-size: 2vw;
+    color: black;
+    margin-left: 5vw;
+    top: 60vw;
+    padding: 1vw;
+    width: 90%;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.email-box {
+    top: 70vw;
+}
+
+.password-box {
+    top: 80vw;
+}
+
+.confirm-box {
+    top: 90vw;
+}
+
+.subscribe-button-page {
+    position: absolute;
+    display: flex;
+    top: 100vw;
+    left: 5vw;
+    padding: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 2vw;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-button-page:hover {
+    background-color: white;
+    color: black;
+}
+
+/* label CSS */
+
+.name-label {
+    position: absolute;
+    display: flex;
+    top: 56vw;
+    left: 5vw;
+    color:white;
+    font-size: 2vw;
+}
+
+.email-label {
+    position: absolute;
+    display: flex;
+    top: 66vw;
+    left: 5vw;
+    color:white;
+    font-size: 2vw;
+}
+
+.password-label {
+    position: absolute;
+    display: flex;
+    top: 76vw;
+    left: 5vw;
+    color:white;
+    font-size: 2vw;
+}
+
+.confirm-label {
+    position: absolute;
+    display: flex;
+    top: 86vw;
+    left: 5vw;
+    color:white;
+    font-size: 2vw;
+}

@@ -1,0 +1,494 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.header, .slider {
+    animation: transitionIn 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* Navbar CSS alphabet */
+
+.nav-bar {
+    background-color: #3C3C3C; 
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar .headLogo {
+    letter-spacing: 2px;
+}
+
+.nav-bar .headLogo:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-bar .headLogo {
+    word-spacing: 1vh;
+}
+
+@media (max-width: 600px){
+    .nav-bar ul li {
+        display: none;
+    }
+}
+
+/* Navbar CSS icon */
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.icon-cart {
+    /* background-color: black; */
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    top: 30%;
+    right: 70px;
+    bottom: 0;
+}
+
+.icon-menu {
+    /* background-color: black; */
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    top: 30%;
+    right: 30px;
+    bottom: 0;
+}
+
+.icon-cart span:hover, .icon-menu span:hover {
+    font-weight: bold;
+}
+
+/* Navbar Dropdown Menu CSS */
+
+.dropdown-menu {
+    position: fixed;
+    display: flex;
+    border-radius: 5px;
+    top: 8vh;
+    right: 30px;
+    background-color: black;
+    justify-content: right;
+    padding-right: 5vw;
+}
+
+.dropdown-menu li span {
+    /* background-color: red; */
+    position: absolute;
+}
+
+.dropdown-menu a {
+    /* background-color: grey; */
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    margin-left: 30px;
+}
+
+.dropdown-menu li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dropdown-menu .static a {
+    margin-left: 0;
+}
+
+.dropdown-menu .line {
+    background-color: grey;
+    width: 100%;
+    height: 2px;
+}
+
+/* change color current page */
+
+.nav-bar .current-page {
+    color: #FFD66C;
+}
+
+/* random block */
+
+.block {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+
+/* header-img CSS */
+
+.header {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header img {
+    display: flex;
+    width: 100%;
+}
+
+.header h1 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    top: 20vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header a {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    top: 30vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header button {
+    position: fixed;
+    display: flex;
+    padding: 1vw;
+    width: 17vw;
+    font-size: 1.5vw;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    color: white;
+    top: 35vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* content CSS */
+
+.slider {
+    position: absolute;
+    display: flex;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    top: 65vw;
+    bottom: 20vw;
+    width: 100%;
+    height: 150vw;
+    opacity: 0.99;
+}
+
+.slider .section {
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+}
+
+/* footer CSS */
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 25%;
+    left: 0vw;
+    right: 0;
+    bottom: 0;
+    top: 150vw;
+}
+
+footer a {
+    color: white;
+}
+
+footer .down {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    bottom: 2vw;
+    font-size: 1vw;
+}
+
+footer .left {
+    position: absolute;
+    display: flex;
+    left: 10vw;
+    font-weight: bold;
+    font-size: 2vw;
+    top: 5vw;
+}
+
+footer .right {
+    position: absolute;
+    display: flex;
+    right: 10vw;
+    font-weight: bold;
+    font-size: 2vw;
+    top: 5vw;
+}
+
+footer .left-des {
+    position: absolute;
+    display: flex;
+    left: 10vw;
+    font-size: 1.5vw;
+    top: 10vw;
+}
+
+footer .right-des {
+    position: absolute;
+    display: flex;
+    right: 10vw;
+    font-size: 1.5vw;
+    top: 10vw;
+}
+
+footer .right-des1 {
+    position: absolute;
+    display: flex;
+    right: 10vw;
+    font-size: 1.5vw;
+    top: 13vw;
+}
+
+/* latest section CSS */
+
+.latest-section {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.latest-section img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px grey;
+    width: 80%;
+    height: 50%;
+}
+
+.latest-section img:hover {
+    filter: brightness(30%);
+    transition: filter 0.3s ease;
+}
+
+.latest-label1, .latest-label2, .latest-label3 {
+    position: absolute;
+    color: white;
+    width: 19vw;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    z-index: -1;
+}
+
+.latest-img1:hover + .latest-label1 {
+    left: 6vw;
+    z-index: 1;
+    transition: z-index 0.3 ease;
+}
+
+.latest-img2:hover + .latest-label2 {
+    z-index: 1;
+    transition: z-index 0.3 ease;
+}
+
+.latest-img3:hover + .latest-label3 {
+    right: 6vw;
+    z-index: 1;
+    transition: z-index 0.3 ease;
+}
+
+.latest-label1:hover {
+    left: 6vw;
+    color: black;
+    z-index: 1;
+}
+
+.latest-label2:hover {
+    color: black;
+    z-index: 1;
+}
+
+.latest-label3:hover {
+    right: 6vw;
+    color: black;
+    z-index: 1;
+}
+
+/* best section CSS */
+
+.best-section {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    height: 50vw;
+    top: 45vw;
+    background-color: white;
+    z-index: -1;
+}
+
+.best-section-label {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    font-size: 2vw;
+    top: 50vw;
+    justify-content: center;
+}
+
+.best-section img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px grey;
+    width: 26%;
+    height: 50%;
+}
+
+.best-section img:hover {
+    filter: brightness(30%);
+    transition: filter 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.best-label {
+    position: absolute;
+    color: white;
+    width: 20vw;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    z-index: -1;
+}
+
+.best-section img:hover + .best-label {
+    z-index: 1;
+    transition: z-index 0.3 ease;
+}
+
+.best-label:hover{
+    z-index: 1;
+    color: black;
+}
+
+/* subscribe CSS */
+
+.subscribe {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50vw;
+    top: 95vw;
+    /* background-color: red; */
+}
+
+.subscribe a {
+    font-size: 4vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe p {
+    position: inherit;
+    top: 12vw;
+    margin-left: 4vw;
+    font-size: 2vw;
+}
+
+/* subscribe CSS */
+
+.subscribe-button {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.subscribe-button button {
+    position: inherit;
+    padding: 1vw;
+    width: 17vw;
+    font-size: 1.5vw;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    color: white;
+    top: 30vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-button button:hover {
+    background-color: white;
+    color: black;
+}

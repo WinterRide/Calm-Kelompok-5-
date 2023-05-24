@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/loginPage.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <script>
+        function redirectToOtherPage() {
+          window.location.href = "../html/homePage.html";
+        }
+      </script>
+    <a class="email-login-label">Email : </a>
+    <a class="password-login-label">Password : </a>
+    <input placeholder="Input your email here" class="email-login-box">
+    <input placeholder="Input your password here" class="password-login-box">  
+    <div class="headLogo">
+        <a>handtekening</a>
+    </div>
+    <br />
+    <div class="button">
+        <button onclick="redirectToOtherPage()">Log In</button>
+    </div>
+</body>
+</html>
